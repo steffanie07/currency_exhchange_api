@@ -49,6 +49,31 @@ symfony serve
 
 The API will be accessible at `http://localhost:8000`.
 
+## Running the Application with Docker
+
+To run the application using Docker, follow these steps:
+
+1. Make sure you have Docker installed on your machine.
+
+2. Build the Docker image using the provided Dockerfile:
+```
+docker build -t myapp -f Dockerfile .
+```
+
+This command will build the Docker image with the tag `myapp` based on the `Dockerfile`.
+
+3. Run the Docker container based on the built image:
+```
+docker run -p 8080:80 myapp
+```
+ 
+This command will start the container and map port 8080 of your host machine to port 80 of the container.
+
+4. Access the application in your browser by navigating to `http://localhost:8080`.
+
+You should see the application running and be able to interact with it.
+
+
 ## Usage
 
 ### Fetching Currency Exchange Rates
